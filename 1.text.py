@@ -18,6 +18,8 @@ copy	对象是否需要复制，可选
 order	创建数组的样式，C为行方向，F为列方向，A为任意方向（默认）
 subok	默认返回一个与基类类型一致的数组
 ndmin	指定生成数组的最小维度
+
+
 np.zeros(x,y)生成x行y列的0矩阵，np.ones(x,y)同理
 """
 import numpy as np
@@ -31,6 +33,6 @@ array0 = np.ones((3,4),dtype = int)
 # print(array0)
 a = np.arange(10,20,2)#numpy语法生成数列
 a1 = np.arange(12).reshape((3,4))#一以数组形式生成数列
-a2 = np.linspace(1,10,6).reshape((2,3))#将1·10平均分割成成x-1段生成列表，也可以reshape
+a2 = np.linspace(1,10,6).reshape((2,3))#将1~10平均分割成成x-1段生成列表，也可以reshape
 print(a1)
 print(a2)#
